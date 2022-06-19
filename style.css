@@ -1,15 +1,41 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
 
+.logo{
+    width: 20%;
+}
+
+.Menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+li{
+   font-family: 'Anek Latin' , sans-serif;
+   font-size: large;
+}
 .FORM{
     margin: 10% 30%;
     border: solid;
-    padding: 20px;
+    padding: 30px ;
+    background-color:#DDDDDA ;
+}
+
+h2{
+    margin-bottom: 60px;
 }
 
 .C1{
     display:flex;
     justify-content: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 30px;  
+    row-gap: 30px;
 }
 
 .C3{
@@ -20,4 +46,40 @@
     display:flex; 
     justify-content: end;
     
+}
+
+.nom{
+    width: 45%;
+}
+
+.prenom{
+    width: 45%;
+}
+
+.iconMenu{
+    display: none;
+}
+
+@media screen and (max-width : 992px) {
+    .Menu{
+        display: none;
+    }
+    .iconMenu{
+        display: flex;
+        width: 40px;
+    }
+
+    .nom{
+        width: 100%;
+    }
+
+    .prenom{
+        width: 100%;
+    }
+
+    .C1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
